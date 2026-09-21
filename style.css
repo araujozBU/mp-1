@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    background-color: #e8edf2;
+    font-size: calc(16px + 0.3vw);
+}
+
+h1 {
+    font-size: calc(28px + 1vw);
+}
+
+h2 {
+    font-size: calc(22px + 0.6vw);
+}
+
+h3 {
+    font-size: calc(18px + 0.4vw);
+}
+
+a {
+    text-decoration: none;
+    color: #245780;
+}
+
+#page-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #243b53;
+    color: white;
+    padding: 2%;
+}
+
+footer a {
+    color: white;
+}
+
+header {
+    text-align: left;
+}
+
+#container {
+    display: flex;
+}
+
+nav {
+    width: 30%;
+    background-color: #d9e2ec;
+    padding: 2%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    color: #243b53;
+    font-size: calc(14px + 0.3vw);
+}
+
+main {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 3%;
+    line-height: 1.6;
+}
+
+main h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main h3, main p {
+    margin-bottom: 10px;
+}
+
+main ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+#calculator {
+    margin-top: 24px;
+    padding: 3%;
+    border: 1px solid #bcccdc;
+    background-color: #d9e2ec;
+}
+
+#calculator-inputs div {
+    margin-bottom: 12px;
+}
+
+#calculator label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#calculator input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #829ab1;
+    font-size: calc(16px + 0.3vw);
+}
+
+#calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#calculator button {
+    padding: 8px 12px;
+    border: 1px solid #243b53;
+    background-color: #243b53;
+    color: white;
+    font-size: calc(16px + 0.3vw);
+}
+
+#output {
+    min-height: 40px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #bcccdc;
+}
+
+@media (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Zaki Araujo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header>
+            <h1>Projects</h1>
+            <p>Software and AI projects from my experience.</p>
+        </header>
+        <div id="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="extracurriculars.html">Extracurriculars</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Property Acquisition Automation</h2>
+                <p>At Norfolk Capital, I developed a Python script that collected property information from Zillow, Redfin APIs, and city property records.</p>
+                <p>The script streamlined acquisition letter creation based on property addresses and saved roughly one hour for every five properties.</p>
+                <h2>Apollo Board Synchronization</h2>
+                <p>At Analog Devices, I developed a script to synchronize external Apollo boards with the current GitHub file structure.</p>
+                <p>The project helped maintain consistency between the boards and repository files.</p>
+                <h2>Neural Network Project</h2>
+                <p>During the MIT artificial intelligence bootcamp, I collaborated on a neural network project while learning about practical AI implementations.</p>
+                
+                <section id="calculator">
+                    <h2>JsCalc</h2>
+                    <div id="calculator-inputs">
+                        <div>
+                            <label for="first-number">First Number:</label>
+                            <input type="text" id="first-number">
+                        </div>
+                        <div>
+                            <label for="second-number">Second Number:</label>
+                            <input type="text" id="second-number">
+                        </div>
+                    </div>
+                    <div id="calculator-buttons">
+                        <button type="button" onclick="addition()">+</button>
+                        <button type="button" onclick="subtraction()">-</button>
+                        <button type="button" onclick="multiplication()">*</button>
+                        <button type="button" onclick="division()">/</button>
+                        <button type="button" onclick="power()">**</button>
+                        <button type="button" onclick="clearCalculator()">Clear</button>
+                    </div>
+                    <div id="calculator-result">
+                        <h3>Result</h3>
+                        <p id="output"></p>
+                    </div>
+                </section>
+                
+            </main>
+        </div>
+        <footer>
+            <p>All rights reserved by Zaki Araujo &copy; <a href="index.html">Credits</a></p>
+        </footer>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
